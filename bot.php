@@ -1,2 +1,3 @@
 <?php
-echo "I am a bot nano pie";
+$events = json_decode($content, true);
+echo $events;
