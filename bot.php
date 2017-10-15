@@ -49,4 +49,4 @@ echo $event;
 echo $messages;
 echo $data;
 echo $post;
-echo $result
+echo $result;
