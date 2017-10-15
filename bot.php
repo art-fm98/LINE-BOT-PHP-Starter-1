@@ -45,5 +45,8 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-echo "\r\n";
-echo "NANO";
+echo $event;
+echo $messages;
+echo $data;
+echo $post;
+echo $result
