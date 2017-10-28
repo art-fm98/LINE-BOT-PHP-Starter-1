@@ -13,6 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			echo $text;
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -40,12 +41,10 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 			echo $result . "\r\n";
-			if ($post == "5") {echo "Good boy";}
 		}
 	}
 }
 echo "OK";
-echo json_encode($data);
 echo $event;
 echo $messages;
 echo $data;
