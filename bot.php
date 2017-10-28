@@ -45,6 +45,7 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
+echo json_encode($data);
 echo $event;
 echo $messages;
 echo $data;
