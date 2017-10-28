@@ -3,6 +3,7 @@ $access_token = 'hUs5ogcoeVzkaQvU149w3srkE/eozzGKhpOy29Hx4r0TQxvsyKnpDDdQeSVjem6
 
 // Get POST body content
 $content = file_get_contents('php://input');
+print "Good Boy";
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
@@ -39,7 +40,7 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
 			curl_close($ch);
-			print $post;
+
 			echo $result . "\r\n";
 		}
 	}
