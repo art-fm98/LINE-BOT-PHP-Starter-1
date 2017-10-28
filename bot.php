@@ -45,7 +45,7 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-print $messages;
+print $post;
 echo $event;
 echo $messages;
 echo $data;
